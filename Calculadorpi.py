@@ -7,8 +7,9 @@
 #** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
 #Autor : Juan  Felipe  Corrales  Toro  **
 #ULTIMA  ACTUALIZACION : 15  de  Septiembre  /  2021  **
+import math
 x=1
-n=int(input("ingresa un n ENTRE MAS GRANDE MAS PRECISO!!"))
+n=int(input("ingresa un n ENTRE MAS GRANDE MAS PRECISO!! " ))
 def cal(x,n):
     m=0
     i=1
@@ -18,8 +19,10 @@ def cal(x,n):
         i=i+1
     return(m)
 cal(x,n)
-pi=cal(x,n)*4
-print(pi)
+p=cal(x,n)*4
+print(p)
+e=p-math.pi
+print("te falta esto de precision ",e)
 
 
 
